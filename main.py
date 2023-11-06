@@ -22,3 +22,19 @@ while True:
         tecla == key.UP
         print('TERMINADO')
         break
+
+# Parte 3
+import os
+number = 0
+def borrar_consola():
+    os.system('cls' if os.name=='nt' else 'clear')
+
+while number <= 50:
+    borrar_consola()
+    print('Oprime la letra n para incrememntar el número, cualquier otra para salir')
+    print(number)
+    letra = readkey()
+    if letra == 'n':
+        number += 1
+    else:
+        break
